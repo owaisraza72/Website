@@ -1,81 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-        }
+      @font-face {
+        font-family: gill-sans-nova;
+        src: url(https://use.typekit.net/af/21fe31/00000000000000007735bb95/30/l?subset_id=2&fvd=n4&v=3)
+            format("woff2"),
+          url(https://use.typekit.net/af/21fe31/00000000000000007735bb95/30/d?subset_id=2&fvd=n4&v=3)
+            format("woff"),
+          url(https://use.typekit.net/af/21fe31/00000000000000007735bb95/30/a?subset_id=2&fvd=n4&v=3)
+            format("opentype");
+        font-weight: 400;
+        font-style: normal;
+        font-stretch: normal;
+        font-display: auto;
+      }
 
-        header {
-            background-color: #2c2926;
-            padding: 0px 100px 0px 100px;
-            height: 500px;
-        }
 
-        .content {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            color: #d2a898;
-            height: 300px;
-            border: 1px solid #d2a898;
-            padding: 50px;
-            ;
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      
+      }
 
-        }
+      /* main-content-strt */
 
-        nav ul {
-            color: aliceblue;
-            list-style: none;
-            display: flex;
-            gap: 60px;
-            font-size: larger;
+      .main-content {
+        background-color: #2c2926;
+        height: 390px;
+      }
 
-        }
+      /* container-strt*/
 
-        .pic {
-            width: 1145px;
-            border: 1px solid #d2a898;
-            padding: 30px;
-        }
+      header {
+        padding: 0px 55px 2px;
+        font-family: gill-sans-nova, sans-serif;
+      }
+
+      .container {
+        max-width: 1300px;
+        margin: auto;
+      }
+
+      .content1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #d2a898;
+        height: 300px;
+        border-bottom: 1px solid #d2a898;
+        border-right: 1px solid #d2a898;
+        border-left: 1px solid #d2a898;
+        padding: 50px;
+        font-family: gill-sans-nova, sans-serif;
+      }
+
+      nav ul {
+        color: aliceblue;
+        list-style: none;
+        display: flex;
+        gap: 60px;
+        font-size: larger;
+      }
+
+      .pic {
+        width: 1190px;
+        border-bottom: 1px solid #d2a898;
+        border-right: 1px solid #d2a898;
+        border-left: 1px solid #d2a898;
+        padding: 50px;
+      }
+
+      /* container-end */
+
+      /* section-strt */
+
+      .content2{
+        position: relative;
+        color: white;
+      }
+
+      .img-title {
+        position: absolute;
+        top: 20em;
+        left: 13em;
+        font-weight: bolder;
+        font-size: 14px;
+      }
+
+      .title {
+        position: absolute;
+        top: 350px;
+        left: 4.5em;
+        font-weight: bold;
+        font-size:40px;
+        width: 259px;
+      }
+
+      /* hero-strt */
+
+     .hero{   margin: auto;
+     }
+
+      .content{display: flex;
+       flex-direction: column;
+        width: 1190px;
+        text-align: center;
+        align-items: center;
+        margin:-6px auto;
+        padding: 0px 190px;
+        gap: 30px;
+        height: 600px;
+        justify-content: center;
+        border-bottom: 1px solid #d2a898;
+        border-right: 1px solid #d2a898;
+        border-left: 1px solid #d2a898;
+       
+      }
+ 
+      
+
+
+      .child{font-size:40px;
+        font-weight: 700;
+        color: #2c2926;
+      }
+
+
+       p{line-height: 33px;
+        color: #2c2926;
+        font-size:20px;
+      font-weight: bold;
+    word-spacing: 9px;
+  } 
+
+
+  .content a{text-decoration:none;
+    background-color: #A15231;
+    padding: 13px 54px;
+    font-size: 16px;
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+  }
+
+
+  .hero-pic{height: 607px;margin: auto;
+  width: 1020px;}
+
+  
+
+
+
     </style>
+  </head>
 
-
-</head>
-
-<body>
-
-    <header>
-
-
-        <div class="content">
-            <h1>PHIL PALLEN</h1>
-            <nav>
-                <ul>
-                    <li>Service</li>
-                    <li>Book</li>
-                    <li>BrandMaster</li>
-                    <li>Tools</li>
-                    <li>Partnerships</li>
-                    <li>Blog</li>
-                </ul>
-
-            </nav>
-
-
-
-
+  <body>
+    <div class="main-content">
+      <header class="container">
+        <div class="content1">
+          <h1>PHIL PALLEN</h1>
+          <nav>
+            <ul>
+              <li>Service</li>
+              <li>Book</li>
+              <li>BrandMaster</li>
+              <li>Tools</li>
+              <li>Partnerships</li>
+              <li>Blog</li>
+            </ul>
+          </nav>
+          
         </div>
-        <img class="pic"
-            src="https://images.squarespace-cdn.com/content/v1/66816ffdabf217192a9f8a40/60cb9575-dc09-4048-817b-7b05310d1381/phil-pallen-personal-branding-home.jpg?format=2500w">
-    </header>
 
-</body>
+        <div class="content2">
+          <img
+            class="pic"
+            src="https://images.squarespace-cdn.com/content/v1/66816ffdabf217192a9f8a40/60cb9575-dc09-4048-817b-7b05310d1381/phil-pallen-personal-branding-home.jpg?format=2500w"
+          />
 
+          <h1 class="img-title">PERSONAL BRANDING AGENCY</h1>
+
+          <span class="title">Master your first impression.</span>
+        </div>
+      </header>
+
+    <hero class="hero">
+
+<div class="content">
+<h1 class="child">Branding can catapult your business.</h1>
+<p>My agency, Phil Pallen Collective, has guided 400+ clients to position, build, and promote their brands effectively for business results. We’ve worked with nearly every industry imaginable—from fitness bloggers to industrial mining—and leverage our experience to capture your essence.</p>
+
+
+<p>With an approach that focuses on personal branding first, we help you figure out what sets you apart—and then bring it to life.</p>
+<a href="">OUR SERVICES</a>
+</div>
+
+
+<!-- <div>
+<img class="hero-pic" src="https://images.squarespace-cdn.com/content/v1/66816ffdabf217192a9f8a40/d6db1675-9c29-4bec-aa62-0fc3583dfdcc/phil-pallen-headshot.jpg?format=2500w" alt="">
+
+
+</div> -->
+
+    </hero>
+    
+  </body>
 </html>
